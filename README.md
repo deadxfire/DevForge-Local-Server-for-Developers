@@ -32,8 +32,9 @@ DevForge is available in two distinct distributions to suit your workflow:
 ### 1. Standalone Installer (`.exe`) — Recommended for Most Users
 The full all-in-one setup installer pre-bundles all runtimes (Apache, MySQL, PHP, Node.js, Composer, Mailpit, phpMyAdmin) and system prerequisites.
 
-👉 **[Download Installer from Releases / Packages](https://github.com/deadxfire/DevForge/releases)**  
-*(Look under the **Releases** or **Packages** section for `DevForge-v1.0.4-Setup.exe`)*
+👉 **[⬇️ Download DevForge v1.0.4 Standalone Setup (.exe)](https://github.com/deadxfire/DevForge/releases/download/v1.0.4/DevForge-v1.0.4-Setup.exe)**  
+*(Direct high-speed download · ~175 MB · Verified Release Asset)*  
+Or view all versions on the **[Releases Page](https://github.com/deadxfire/DevForge/releases)**.
 
 ### 2. Portable Edition (This Repository)
 This repository contains the **Portable Edition** structure of DevForge.
