@@ -1,11 +1,7 @@
 # DevForge - The Modern Local Web Development Environment
 
 <p align="center">
-  <img src="assets/devforge-banner.png" alt="DevForge Banner" width="800"/>
-</p>
-
-<p align="center">
-  <strong>Fast, Isolated, Portable & Powerful Universal Development Environment for Windows</strong>
+  <img src="assets/devforge-hero.png" alt="DevForge - Local Development Environment" width="100%"/>
 </p>
 
 <p align="center">
@@ -26,10 +22,6 @@ DevForge is engineered for performance, stability, and simplicity:
 * **No Windows Service Clutter**: DevForge does not permanently register background Windows services. Its built-in service orchestration manages processes cleanly and shuts them down completely when you exit.
 * **Isolated & Portable**: Keep your entire development environment self-contained in one directory without scattering files across system folders or polluting the Windows registry.
 * **Lightning Fast**: Enjoy near-instant startup times and rapid virtual host resolution.
-
-<p align="center">
-  <img src="assets/screenshot-inner.png" alt="DevForge Dashboard" width="720"/>
-</p>
 
 ---
 
@@ -53,15 +45,15 @@ This repository contains the **Portable Edition** structure of DevForge.
 
 ## 🛠️ Bundled Components & Tech Stack
 
-| Component | Description |
-| :--- | :--- |
-| **Apache 2.4** | High-performance HTTP/HTTPS web server with mod_rewrite & virtual host support |
-| **MySQL 8.0 / 8.4** | Enterprise-grade relational database engine with automated data lifecycle |
-| **PHP 8.2 & 8.5** | Fast-CGI runtimes pre-configured with essential web development extensions |
-| **Node.js 20 / 22 LTS** | Modern JavaScript runtime bundled with npm and npx |
-| **Mailpit** | Ultra-fast local email testing server & web UI for catching and inspecting outgoing mail |
-| **phpMyAdmin 5.2** | Full-featured web-based MySQL administration interface |
-| **Composer 2** | Dependency manager for PHP pre-configured and globally accessible |
+| Component | Version | Description |
+| :--- | :--- | :--- |
+| **PHP** | `8.5.10` / `8.2` | Fast-CGI runtimes pre-configured with essential web development extensions |
+| **Node.js** | `v22.22.0` LTS | Modern JavaScript runtime bundled with npm and npx |
+| **Composer** | `v2.10.3` | Dependency manager for PHP pre-configured and globally accessible |
+| **Apache** | `2.4.66` | High-performance HTTP/HTTPS web server with mod_rewrite & virtual host support |
+| **MySQL** | `8.4.3` / `8.0` | Enterprise-grade relational database engine with automated data lifecycle |
+| **Mailpit** | `1.20.0` | Ultra-fast local email testing server & web UI for catching and inspecting outgoing mail |
+| **phpMyAdmin** | `5.2` | Full-featured web-based MySQL administration interface |
 
 ---
 
