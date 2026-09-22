@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/deadxfire/DevForge/releases"><img src="https://img.shields.io/badge/Release-v1.0.4-blue.svg?style=flat-square" alt="Release v1.0.4"></a>
+  <a href="https://github.com/deadxfire/DevForge-Local-Server-for-Developers/releases"><img src="https://img.shields.io/badge/Release-v1.0.4-blue.svg?style=flat-square" alt="Release v1.0.4"></a>
   <img src="https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011%20(64--bit)-0078D6.svg?style=flat-square&logo=windows" alt="Platform Windows">
   <img src="https://img.shields.io/badge/Architecture-x64-orange.svg?style=flat-square" alt="Architecture x64">
   <img src="https://img.shields.io/badge/Edition-Portable%20%26%20Installer-green.svg?style=flat-square" alt="Editions">
@@ -32,9 +32,9 @@ DevForge is available in two distinct distributions to suit your workflow:
 ### 1. Standalone Installer (`.exe`) — Recommended for Most Users
 The full all-in-one setup installer pre-bundles all runtimes (Apache, MySQL, PHP, Node.js, Composer, Mailpit, phpMyAdmin) and system prerequisites.
 
-👉 **[⬇️ Download DevForge v1.0.4 Standalone Setup (.exe)](https://github.com/deadxfire/DevForge/releases/download/v1.0.4/DevForge-v1.0.4-Setup.exe)**  
+👉 **[⬇️ Download DevForge v1.0.4 Standalone Setup (.exe)](https://github.com/deadxfire/DevForge-Local-Server-for-Developers/releases/download/v1.0.4/DevForge-v1.0.4-Setup.exe)**  
 *(Direct high-speed download · ~175 MB · Verified Release Asset)*  
-Or view all versions on the **[Releases Page](https://github.com/deadxfire/DevForge/releases)**.
+Or view all versions on the **[Releases Page](https://github.com/deadxfire/DevForge-Local-Server-for-Developers/releases)**.
 
 ### 2. Portable Edition (This Repository)
 This repository contains the **Portable Edition** structure of DevForge.
@@ -79,7 +79,7 @@ This repository contains the **Portable Edition** structure of DevForge.
 ### Using the Portable Edition:
 1. Clone this repository or download the ZIP:
    ```bash
-   git clone https://github.com/deadxfire/DevForge.git
+   git clone https://github.com/deadxfire/DevForge-Local-Server-for-Developers.git
    ```
 2. Double-click **`DevForge.exe`** in the root directory.
 3. Click **Start All Services**.
@@ -98,8 +98,8 @@ This repository contains the **Portable Edition** structure of DevForge.
 
 ## 🤝 Community & Support
 
-* **Bug Reports**: Found a bug? Open an issue via our [Bug Report Template](https://github.com/deadxfire/DevForge/issues/new?template=bug_report.md).
-* **Feature Requests**: Have an idea? Submit a request via our [Feature Request Template](https://github.com/deadxfire/DevForge/issues/new?template=feature_request.md).
+* **Bug Reports**: Found a bug? Open an issue via our [Bug Report Template](https://github.com/deadxfire/DevForge-Local-Server-for-Developers/issues/new?template=bug_report.md).
+* **Feature Requests**: Have an idea? Submit a request via our [Feature Request Template](https://github.com/deadxfire/DevForge-Local-Server-for-Developers/issues/new?template=feature_request.md).
 
 ---
 
