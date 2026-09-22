@@ -1,0 +1,34 @@
+{
+    "Services":  [
+                     {
+                         "Id":  "apache",
+                         "ConfigPath":  "C:\\DevForge\\config\\apache\\httpd.conf",
+                         "Name":  "Apache",
+                         "AutoStart":  false,
+                         "Description":  "HTTP Web Server",
+                         "Port":  80,
+                         "Enabled":  true,
+                         "BinaryPath":  "C:\\DevForge\\bin\\apache\\bin\\httpd.exe"
+                     },
+                     {
+                         "Id":  "mysql",
+                         "ConfigPath":  "C:\\DevForge\\config\\mysql\\my.ini",
+                         "Name":  "MySQL",
+                         "AutoStart":  false,
+                         "Description":  "Database Server",
+                         "Port":  3306,
+                         "Enabled":  true,
+                         "BinaryPath":  "C:\\DevForge\\bin\\mysql\\bin\\mysqld.exe"
+                     },
+                     {
+                         "Id":  "mailpit",
+                         "ConfigPath":  "",
+                         "Name":  "Mailpit",
+                         "AutoStart":  false,
+                         "Description":  "Email Testing Server",
+                         "Port":  8025,
+                         "Enabled":  true,
+                         "BinaryPath":  "C:\\DevForge\\bin\\mailpit\\mailpit.exe"
+                     }
+                 ]
+}

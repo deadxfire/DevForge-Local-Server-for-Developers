@@ -1,0 +1,28 @@
+# DevForge Data & State
+data/
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Temporary Files
+tmp/*
+!tmp/.gitkeep
+
+# User Projects (Keep default welcome page)
+projects/*
+!projects/index.php
+!projects/.gitkeep
+
+# System & OS Files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Executable installers & Archives
+*.Setup.exe
+*.msi
+*.zip
+*.7z
+*.rar
+*.tar.gz

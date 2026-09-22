@@ -1,0 +1,20 @@
+{
+    "NodeVersions":  [
+                         {
+                             "Path":  "C:\\DevForge\\bin\\node\\22",
+                             "IsDefault":  true,
+                             "Version":  "22",
+                             "IsInstalled":  true
+                         }
+                     ],
+    "SelectedNode":  "22",
+    "SelectedPhp":  "8.5",
+    "PhpVersions":  [
+                        {
+                            "Path":  "C:\\DevForge\\bin\\php\\8.5",
+                            "IsDefault":  true,
+                            "Version":  "8.5",
+                            "IsInstalled":  true
+                        }
+                    ]
+}

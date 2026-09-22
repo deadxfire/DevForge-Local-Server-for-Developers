@@ -1,0 +1,27 @@
+{
+    "AutoStartServices":  false,
+    "Ports":  {
+                  "Redis":  6379,
+                  "PostgreSql":  5432,
+                  "MailpitSmtp":  1025,
+                  "MailpitHttp":  8025,
+                  "Http":  80,
+                  "MySql":  3306,
+                  "Https":  443
+              },
+    "PreferredTheme":  "Light",
+    "Version":  "1.0.4",
+    "StartWithWindows":  false,
+    "EnableHttps":  false,
+    "Paths":  {
+                  "ApacheConfig":  "C:\\DevForge\\config\\apache",
+                  "Projects":  "C:\\DevForge\\projects",
+                  "Data":  "C:\\DevForge\\data",
+                  "Logs":  "C:\\DevForge\\logs",
+                  "Installation":  "C:\\DevForge",
+                  "Runtimes":  "C:\\DevForge\\bin"
+              },
+    "MinimizeToTray":  true,
+    "Developer":  "Arindam Makar",
+    "AppName":  "DevForge"
+}

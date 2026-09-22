@@ -1,58 +1,64 @@
-# DevForge
+# DevForge - The Modern Local Web Development Environment
 
 <p align="center">
   <img src="assets/devforge-banner.png" alt="DevForge Banner" width="800"/>
 </p>
 
 <p align="center">
-  <strong>Fast, Modern, All-In-One Local Web Development Server for Windows</strong>
+  <strong>Fast, Isolated, Portable & Powerful Universal Development Environment for Windows</strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/deadxfire/DevForge/releases"><img src="https://img.shields.io/badge/Release-v1.0.4-blue.svg?style=flat-square" alt="Release v1.0.4"></a>
   <img src="https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011%20(64--bit)-0078D6.svg?style=flat-square&logo=windows" alt="Platform Windows">
   <img src="https://img.shields.io/badge/Architecture-x64-orange.svg?style=flat-square" alt="Architecture x64">
-  <img src="https://img.shields.io/badge/License-Proprietary-red.svg?style=flat-square" alt="License">
+  <img src="https://img.shields.io/badge/Edition-Portable%20%26%20Installer-green.svg?style=flat-square" alt="Editions">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Proprietary-red.svg?style=flat-square" alt="License"></a>
 </p>
 
 ---
 
-## ⚡ Overview
+## ⚡ What is DevForge?
 
-**DevForge** is a lightning-fast, self-contained local web development environment built specifically for Windows developers. It bundles everything you need to build, test, and deploy modern PHP, Node.js, and MySQL applications right on your local machine without the hassle of configuring individual services or dealing with complex VM/Docker overhead.
+**DevForge** is a modern, blazing-fast, and universal local development environment built specifically for Windows developers. It provides an isolated, portable, and hassle-free server stack for developing PHP, Node.js, and MySQL applications.
+
+DevForge is engineered for performance, stability, and simplicity:
+* **No Windows Service Clutter**: DevForge does not permanently register background Windows services. Its built-in service orchestration manages processes cleanly and shuts them down completely when you exit.
+* **Isolated & Portable**: Keep your entire development environment self-contained in one directory without scattering files across system folders or polluting the Windows registry.
+* **Lightning Fast**: Enjoy near-instant startup times and rapid virtual host resolution.
 
 <p align="center">
-  <img src="assets/screenshot-inner.png" alt="DevForge Dashboard" width="700"/>
+  <img src="assets/screenshot-inner.png" alt="DevForge Dashboard" width="720"/>
 </p>
 
 ---
 
-## 📦 Download & Quick Install
+## 📦 Editions & Downloads
 
-### [⬇️ Download DevForge v1.0.4 Standalone Installer (.exe)](DevForge-v1.0.4-Setup.exe?raw=true)
+DevForge is available in two distinct distributions to suit your workflow:
 
-> **File:** `DevForge-v1.0.4-Setup.exe` (~175 MB)  
-> **Prerequisites:** Windows 10 / 11 (64-bit). Administrator rights are required during setup to configure system ports (80/443/3306) and local hosts.
+### 1. Standalone Installer (`.exe`) — Recommended for Most Users
+The full all-in-one setup installer pre-bundles all runtimes (Apache, MySQL, PHP, Node.js, Composer, Mailpit, phpMyAdmin) and system prerequisites.
 
-### Quick Setup Steps
-1. Download **`DevForge-v1.0.4-Setup.exe`**.
-2. Run the installer and choose your installation directory (default: `C:\DevForge`).
-3. Follow the wizard steps to complete the installation.
-4. Launch **DevForge** from the Start Menu or Desktop shortcut.
-5. Click **Start All Services** and start coding!
+👉 **[Download Installer from Releases / Packages](https://github.com/deadxfire/DevForge/releases)**  
+*(Look under the **Releases** or **Packages** section for `DevForge-v1.0.4-Setup.exe`)*
+
+### 2. Portable Edition (This Repository)
+This repository contains the **Portable Edition** structure of DevForge.
+* Clone or download this repository as a ZIP.
+* Launch **`DevForge.exe`** directly from the root folder.
+* Add or customize your favorite runtimes inside the `bin/` directory.
 
 ---
 
 ## 🛠️ Bundled Components & Tech Stack
 
-DevForge comes pre-packaged with production-ready, tuned runtimes and server components:
-
 | Component | Description |
 | :--- | :--- |
 | **Apache 2.4** | High-performance HTTP/HTTPS web server with mod_rewrite & virtual host support |
-| **MySQL 8.0** | Robust, enterprise-grade relational database engine |
-| **PHP 8.2 & 8.3** | High-performance PHP fast-CGI runtimes with essential development extensions enabled |
-| **Node.js 20 LTS** | Modern JavaScript runtime bundled with npm for frontend tooling |
+| **MySQL 8.0 / 8.4** | Enterprise-grade relational database engine with automated data lifecycle |
+| **PHP 8.2 & 8.5** | Fast-CGI runtimes pre-configured with essential web development extensions |
+| **Node.js 20 / 22 LTS** | Modern JavaScript runtime bundled with npm and npx |
 | **Mailpit** | Ultra-fast local email testing server & web UI for catching and inspecting outgoing mail |
 | **phpMyAdmin 5.2** | Full-featured web-based MySQL administration interface |
 | **Composer 2** | Dependency manager for PHP pre-configured and globally accessible |
@@ -61,25 +67,50 @@ DevForge comes pre-packaged with production-ready, tuned runtimes and server com
 
 ## 🌟 Key Features
 
-* **One-Click Control**: Start, stop, or restart individual services or the entire stack with a single click.
-* **Modern Windows UI**: Clean, responsive dashboard designed for Windows 10 & 11 with system tray minimization.
-* **Automatic Virtual Hosts**: Quickly map local domains (`project.local`) with automatic `hosts` file routing.
-* **Local SSL / HTTPS**: Zero-config local certificate support for testing secure web applications.
-* **Isolated Environment**: Kept entirely self-contained inside `C:\DevForge` — leaves no messy registry clutter or conflicting background services.
-* **Built-in Mail Testing**: Catch every development email in Mailpit without risking sending test emails to real users.
+* **Pretty Local URLs**: Automatically map project folders into clean local domains (e.g., `http://myproject.test` instead of `http://localhost/myproject`).
+* **Zero-Config Local SSL**: One-click local HTTPS certificates for testing secure web applications.
+* **Service Orchestration**: Start, stop, or restart individual services or the entire stack with a single click.
+* **System Tray Minimization**: Seamlessly runs in the Windows notification area with quick-access tray menus.
+* **Flexible Directory Layout**:
+  - `projects/` — Place your web project folders here.
+  - `config/` — Apache and MySQL configuration files.
+  - `defaults/` — Pristine default configurations and templates.
+  - `bin/` — Runtimes for Apache, PHP, MySQL, Node.js, Mailpit, etc.
+  - `logs/` — Aggregated server logs.
+* **Clean Uninstall**: Because it does not pollute system directories, removing or moving DevForge is as simple as deleting its folder.
+
+---
+
+## 🚀 Quick Start Guide
+
+### Using the Portable Edition:
+1. Clone this repository or download the ZIP:
+   ```bash
+   git clone https://github.com/deadxfire/DevForge.git
+   ```
+2. Double-click **`DevForge.exe`** in the root directory.
+3. Click **Start All Services**.
+4. Open your browser and navigate to `http://localhost` to view the DevForge welcome page!
 
 ---
 
 ## 💻 System Requirements
 
 * **Operating System**: Windows 10 (Version 1903 or later) or Windows 11 (64-bit)
-* **Processor**: Intel / AMD 64-bit processor (x64)
+* **Processor**: 64-bit Intel / AMD CPU (x64)
 * **Memory**: Minimum 4 GB RAM (8 GB or more recommended)
-* **Storage**: ~3 GB free disk space for complete runtime environment and database storage
+* **Privileges**: Administrator privileges may be requested when binding standard ports (80/443) or managing virtual hosts.
+
+---
+
+## 🤝 Community & Support
+
+* **Bug Reports**: Found a bug? Open an issue via our [Bug Report Template](https://github.com/deadxfire/DevForge/issues/new?template=bug_report.md).
+* **Feature Requests**: Have an idea? Submit a request via our [Feature Request Template](https://github.com/deadxfire/DevForge/issues/new?template=feature_request.md).
 
 ---
 
 ## 📄 License & Copyright
 
 Copyright © 2026 **Arindam Makar**. All Rights Reserved.  
-DevForge is proprietary software. See the [LICENSE](LICENSE) file for full terms and conditions.
+DevForge and all associated binaries, designs, and documentation are proprietary software. See [LICENSE](LICENSE) for terms.
