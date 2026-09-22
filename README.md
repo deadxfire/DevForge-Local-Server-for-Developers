@@ -1,7 +1,7 @@
-# DevForge - The Modern Local Web Development Environment
+# DevForge - Local Server for Developers
 
 <p align="center">
-  <img src="assets/devforge-hero.png" alt="DevForge - Local Development Environment" width="100%"/>
+  <img src="assets/devforge-hero.png" alt="DevForge - Local Server for Developers" width="100%"/>
 </p>
 
 <p align="center">
