@@ -14,6 +14,7 @@ $dir = __DIR__;
 if (is_dir($dir)) {
     foreach (scandir($dir) as $item) {
         if ($item === '.' || $item === '..' || !is_dir($dir . '/' . $item)) continue;
+        if (strcasecmp($item, 'server') === 0 || str_starts_with($item, '.')) continue;
         $projects[] = $item;
     }
 }
@@ -72,6 +73,14 @@ if (is_dir($dir)) {
             <span class="badge-devforge">Standalone Local Server</span>
             <h1>Welcome to <span>DevForge</span></h1>
             <p class="subtitle">Your individual, high-performance local web development suite is running smoothly.</p>
+            <div style="margin-top: 14px; display: flex; justify-content: center; gap: 10px;">
+                <a href="https://github.com/deadxfire/DevForge-Local-Server-for-Developers" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: #FFFFFF; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; font-weight: 600; color: var(--text-main); text-decoration: none; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+                    ⭐ GitHub Repository
+                </a>
+                <a href="https://github.com/deadxfire/DevForge-Local-Server-for-Developers/releases" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; background: #EEF2FF; border: 1px solid #C7D2FE; border-radius: 6px; font-size: 13px; font-weight: 600; color: var(--primary); text-decoration: none;">
+                    🔄 Check for Updates
+                </a>
+            </div>
         </header>
 
         <div class="grid">
@@ -128,7 +137,7 @@ if (is_dir($dir)) {
         </div>
 
         <footer class="footer">
-            DevForge Local Development Environment &bull; Built with love by Arindam Makar
+            DevForge Local Development Environment &bull; Built with love by <a href="https://github.com/deadxfire" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">Arindam Makar</a> &bull; <a href="https://github.com/deadxfire/DevForge-Local-Server-for-Developers" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">GitHub Repository</a> &bull; <a href="https://github.com/deadxfire/DevForge-Local-Server-for-Developers/releases" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">Check Updates</a>
         </footer>
     </div>
 </body>

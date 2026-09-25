@@ -20,6 +20,7 @@ Desktop.ini
 .DS_Store
 
 # Executable installers & Archives
+*.pdb
 *.Setup.exe
 *.msi
 *.zip
