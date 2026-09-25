@@ -17,6 +17,12 @@ All notable changes to **DevForge** will be documented in this file.
 - Tuned PHP 8.5 PDO MySQL driver compatibility and extension directories.
 - Refined project scanner to cleanly isolate development server codebases.
 
+### Fixed
+- Fixed MySQL InnoDB "Multiple files found for the same tablespace ID" crash on multi-computer installations and updates.
+- Added upgrade protection in installer to prevent merging or overwriting files in existing MySQL data directories.
+- Switched installer build pipeline to automated pristine MySQL 8.4 system catalog initialization (`--initialize-insecure`).
+- Added pre-flight tablespace collision detection and quarantine in `MysqlManager` to protect existing user databases.
+
 ## [1.0.4] - 2026-09-22
 
 ### Added
