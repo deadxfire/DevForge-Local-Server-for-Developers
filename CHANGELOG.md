@@ -2,6 +2,18 @@
 
 All notable changes to **DevForge** will be documented in this file.
 
+## [2.0.0] - 2026-09-26
+
+### Major Release & Critical Fixes
+- **WPF UI Thread Deadlock Resolution**: Resolved a critical startup race condition where synchronous awaiting (`Task.WhenAll(...).GetAwaiter().GetResult()`) of `ConfigService.InitializeAsync()` and `SettingsService.LoadSettingsAsync()` deadlocked on the WPF UI thread due to internal `SemaphoreSlim` contention. Offloaded initialization to `Task.Run()` so the dashboard interface and tray icon initialize instantly and smoothly without freezing or lingering in background headless state.
+- **MySQL 8.4 Component Reference Cache Clean Startup**: Configured `loose_component_reference_cache = OFF` and `mysqlx = 0` across dynamic configuration generators, template files, and portable configurations. This eliminates the benign MySQL startup stderr warning (`mysqld: Can't open shared library component_reference_cache.dll errno: 126`) and ensures pure zero-warning engine startups.
+- **MySQL Collision Isolation Hardening**: Hardened database collision quarantine test suites and runtime algorithms to ensure existing projects and colliding databases (such as `phpmyadmin`) are safely and automatically isolated into `data\mysql_quarantine` without data loss.
+- **Production-Ready Quality Assurance**: Verified all 280 test fixtures pass with zero regressions; validated single-file assembly bundling and Authenticode digital signatures across all binaries.
+
+### Improved
+- Bumped application, core assembly, and metadata versions uniformly to `2.0.0`.
+- Updated Portable Edition binary package and standalone setup installer payload.
+
 ## [1.0.8] - 2026-09-26
 
 ### Fixed

@@ -10,7 +10,7 @@
                   "Https":  443
               },
     "PreferredTheme":  "Light",
-    "Version":  "1.0.7",
+    "Version":  "2.0.0",
     "StartWithWindows":  false,
     "EnableHttps":  false,
     "Paths":  {
