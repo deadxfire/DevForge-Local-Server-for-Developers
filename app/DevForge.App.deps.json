@@ -7,12 +7,12 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {},
     ".NETCoreApp,Version=v10.0/win-x64": {
-      "DevForge.App/1.0.5": {
+      "DevForge.App/1.0.6": {
         "dependencies": {
           "CommunityToolkit.Mvvm": "8.4.2",
-          "DevForge.Core": "1.0.5",
-          "DevForge.Infrastructure": "1.0.5",
-          "DevForge.Services": "1.0.5",
+          "DevForge.Core": "1.0.6",
+          "DevForge.Infrastructure": "1.0.6",
+          "DevForge.Services": "1.0.6",
           "Microsoft.Extensions.DependencyInjection": "10.0.12",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "10.0.9",
           "runtimepack.Microsoft.WindowsDesktop.App.Runtime.win-x64": "10.0.9"
@@ -1199,17 +1199,17 @@
           }
         }
       },
-      "DevForge.Core/1.0.5": {
+      "DevForge.Core/1.0.6": {
         "runtime": {
           "DevForge.Core.dll": {
-            "assemblyVersion": "1.0.5.0",
-            "fileVersion": "1.0.5.0"
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
           }
         }
       },
-      "DevForge.Infrastructure/1.0.5": {
+      "DevForge.Infrastructure/1.0.6": {
         "dependencies": {
-          "DevForge.Core": "1.0.5",
+          "DevForge.Core": "1.0.6",
           "Microsoft.Extensions.Configuration": "10.0.12",
           "Microsoft.Extensions.Configuration.Binder": "10.0.12",
           "Microsoft.Extensions.Configuration.Json": "10.0.12",
@@ -1219,27 +1219,27 @@
         },
         "runtime": {
           "DevForge.Infrastructure.dll": {
-            "assemblyVersion": "1.0.5.0",
-            "fileVersion": "1.0.5.0"
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
           }
         }
       },
-      "DevForge.Services/1.0.5": {
+      "DevForge.Services/1.0.6": {
         "dependencies": {
-          "DevForge.Core": "1.0.5",
-          "DevForge.Infrastructure": "1.0.5"
+          "DevForge.Core": "1.0.6",
+          "DevForge.Infrastructure": "1.0.6"
         },
         "runtime": {
           "DevForge.Services.dll": {
-            "assemblyVersion": "1.0.5.0",
-            "fileVersion": "1.0.5.0"
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
           }
         }
       }
     }
   },
   "libraries": {
-    "DevForge.App/1.0.5": {
+    "DevForge.App/1.0.6": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1380,17 +1380,17 @@
       "path": "serilog.sinks.file/7.0.0",
       "hashPath": "serilog.sinks.file.7.0.0.nupkg.sha512"
     },
-    "DevForge.Core/1.0.5": {
+    "DevForge.Core/1.0.6": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "DevForge.Infrastructure/1.0.5": {
+    "DevForge.Infrastructure/1.0.6": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "DevForge.Services/1.0.5": {
+    "DevForge.Services/1.0.6": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

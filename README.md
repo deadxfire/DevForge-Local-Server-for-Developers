@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/deadxfire/DevForge-Local-Server-for-Developers/releases"><img src="https://img.shields.io/badge/Release-v1.0.5-blue.svg?style=flat-square" alt="Release v1.0.5"></a>
+  <a href="https://github.com/deadxfire/DevForge-Local-Server-for-Developers/releases"><img src="https://img.shields.io/badge/Release-v1.0.6-blue.svg?style=flat-square" alt="Release v1.0.6"></a>
   <img src="https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011%20(64--bit)-0078D6.svg?style=flat-square&logo=windows" alt="Platform Windows">
   <img src="https://img.shields.io/badge/Architecture-x64-orange.svg?style=flat-square" alt="Architecture x64">
   <img src="https://img.shields.io/badge/Edition-Portable%20%26%20Installer-green.svg?style=flat-square" alt="Editions">
@@ -32,7 +32,7 @@ DevForge is available in two distinct distributions to suit your workflow:
 ### 1. Standalone Installer (`.exe`) — Recommended for Most Users
 The full all-in-one setup installer pre-bundles all runtimes (Apache, MySQL, PHP, Node.js, Composer, Mailpit, phpMyAdmin) and system prerequisites.
 
-👉 **[⬇️ Download DevForge v1.0.5 Standalone Setup (.exe)](https://github.com/deadxfire/DevForge-Local-Server-for-Developers/releases/download/v1.0.5/DevForge-v1.0.5-Setup.exe)**  
+👉 **[⬇️ Download DevForge v1.0.6 Standalone Setup (.exe)](https://github.com/deadxfire/DevForge-Local-Server-for-Developers/releases/download/v1.0.6/DevForge-v1.0.6-Setup.exe)**  
 *(Direct high-speed download · ~180 MB · Verified Release Asset)*  
 Or view all versions on the **[Releases Page](https://github.com/deadxfire/DevForge-Local-Server-for-Developers/releases)**.
 

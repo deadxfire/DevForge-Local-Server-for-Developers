@@ -2,6 +2,18 @@
 
 All notable changes to **DevForge** will be documented in this file.
 
+## [1.0.6] - 2026-09-26
+
+### Added
+- **Automated MySQL InnoDB Log Auto-Recovery**: Built-in intelligent auto-recovery in `MysqlManager` that detects redo log incompatibilities, version mismatch errors (e.g. error 3508 / 126), and crash states, automatically quarantining problematic transient redo logs into timestamped backups and restarting the engine safely without data loss.
+- **Installer Upgrade Transient Cleaner**: Inno Setup installer now automatically detects and cleans legacy transient redo log directories (`#innodb_redo`, `#ib_redo*`) and leftover lock/socket artifacts during installation and upgrades so MySQL starts cleanly out-of-the-box.
+- **Intelligent Multi-Phase Service Startup**: Added pre-flight health checks and retry orchestration to capture early stderr warnings, repair corrupted transient states, and guarantee service readiness.
+
+### Improved
+- Preserves all user database catalogs, tablespaces (`.ibd`), and core InnoDB dictionaries (`ibdata1`) intact during automated recovery and installer updates.
+- Hardened MySQL startup fingerprinting to recognize binary changes between releases and preemptively prepare data directories.
+- Upgraded standalone installer payload and Portable Edition assemblies to v1.0.6.
+
 ## [1.0.5] - 2026-09-25
 
 ### Added
