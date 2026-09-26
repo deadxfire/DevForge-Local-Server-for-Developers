@@ -2,6 +2,18 @@
 
 All notable changes to **DevForge** will be documented in this file.
 
+## [1.0.8] - 2026-09-26
+
+### Fixed
+- **Windows 11 Application Control / Smart App Control Policy Resolution (0x800711C7)**: Converted the DevForge core application packaging to a fully self-contained Single-File bundle with in-memory assembly loading. This completely eliminates loose unverified DLLs (`DevForge.Services.dll`, `DevForge.Core.dll`, `DevForge.Infrastructure.dll`) on disk that trigger Windows Smart App Control (SAC) and WDAC blocks.
+- **Authenticode Code Signing**: Added automated Authenticode digital signing with SHA-256 and trusted timestamping to both `DevForge.App.exe` and `DevForge-Setup.exe` to establish binary trust and prevent SmartScreen / security policy warnings.
+- **WPF Application Dispatcher Synchronization**: Synchronized startup initialization and enforced `ShutdownMode.OnExplicitShutdown`, eliminating premature process terminations and ensuring the main dashboard window and system tray icon stay open reliably.
+- **Installer Legacy Cleanup & Zone Identifier Unblocking**: Added automated post-install cleanup of legacy loose `.dll` files from prior versions and execution of `Unblock-File` across application binaries to strip Mark-of-the-Web (`Zone.Identifier`) flags.
+
+### Improved
+- Streamlined Portable Edition layout: eliminated hundreds of loose runtime DLLs, consolidating the executable into a single, clean binary.
+- Updated Portable Edition binaries and standalone setup package to v1.0.8.
+
 ## [1.0.7] - 2026-09-26
 
 ### Fixed
