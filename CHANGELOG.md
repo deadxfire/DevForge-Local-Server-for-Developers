@@ -2,6 +2,18 @@
 
 All notable changes to **DevForge** will be documented in this file.
 
+## [1.0.7] - 2026-09-26
+
+### Fixed
+- **External Quarantine Isolation**: Relocated the database and redo log quarantine directories completely outside the MySQL datadir (`data\mysql_quarantine`). This prevents MySQL InnoDB's catalog scanner from detecting quarantined `.ibd` files and permanently resolves the fatal `Multiple files found for the same tablespace ID` collision error.
+- **Legacy Quarantine Eviction**: The installer and service manager now proactively sweep and evict any legacy `_quarantined_*` directories and `#innodb_redo.bak*` folders left inside the active datadir from previous updates.
+- **Enhanced Startup Verification & Error Capture**: Increased startup health verification with iterative TCP port responsiveness checks up to 2500ms and deep diagnostic capture combining both stderr and `mysql_error.log` output.
+- **Universal Orphan Catalog Resolution**: Automated resolution prioritizes active developer projects and safely isolates colliding orphaned catalogs.
+
+### Improved
+- Cleaned transient InnoDB redo, temp, and doublewrite files from distribution staging packages so target machines initialize cleanly on first launch.
+- Upgraded standalone installer payload and Portable Edition assemblies to v1.0.7.
+
 ## [1.0.6] - 2026-09-26
 
 ### Added
