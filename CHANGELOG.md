@@ -2,6 +2,18 @@
 
 All notable changes to **DevForge** will be documented in this file.
 
+## [2.0.1] - 2026-10-01
+
+### Improved & Redesigned
+- **Clean & Modern Dashboard Interface**: Redesigned the main dashboard view with a simple, tidy, and professional developer layout. Removed the redundant, cluttered project list from the dashboard to focus purely on server orchestration and quick developer actions (projects remain cleanly managed in the dedicated Projects view).
+- **Core Services Control Grid**: Redesigned Apache, MySQL, and Mailpit cards with crisp typography, real-time status pills, active ports display, direct access links (`http://localhost`, `phpMyAdmin`, `Mailpit`), and unified Start/Stop/Restart actions.
+- **Active Runtimes & Toolchain Strip**: Clean visual overview of installed and active PHP 8.5, Node.js 22, and Composer versions with local host resolution.
+- **Quick Developer Utilities Panel**: Built a tidy 6-card shortcut grid for rapid access to Localhost Web, phpMyAdmin, Mailpit Inbox, Workspace Explorer, Developer Terminal, and Project Management.
+
+### Fixed
+- **MySQL InnoDB Data Protection & Isolation Fix**: Removed active project database names from leaked template tablespace collision sweeps, ensuring project databases (such as `whatsappsaas`) and their `.ibd` tablespaces are never mistakenly quarantined during installer upgrades or service starts.
+- **Enhanced Test Verification**: Verified all 284 unit and integration test fixtures pass with zero regressions.
+
 ## [2.0.0] - 2026-09-26
 
 ### Major Release & Critical Fixes
